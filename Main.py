@@ -259,7 +259,15 @@ def nombre_pair_0_à_n(n):
         print(i)
 def exercice34():
     n = int (input ("entrez un nombre"))
-    print(nombre_pair_0_à_n(n))             
+    print(nombre_pair_0_à_n(n))
+        
+def carré_parfait_n(n):
+    for i in range (1,n+1):
+        print(i**2)
+def exercice35():
+    n = int (input ("entrez un nombre"))
+    print(carré_parfait_n(n))
+        
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -333,7 +341,9 @@ def main():
     elif choix == "33":
         exercice33()
     elif choix == "34":
-        exercice34()    
+        exercice34()   
+    elif choix == "35":
+        exercice35()     
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
