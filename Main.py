@@ -234,8 +234,17 @@ def compte_a_rebours(n):
         print(i)
 def exercice31():
     n = int (input ("entrez un nombre"))
-    print(compte_a_rebours(n))          
-          
+    print(compte_a_rebours(n))
+              
+def somme_jusqua_n(n):
+    somme = 0 
+    for i in range (1,n+1):
+        somme += i
+    return somme
+def exercice32():
+    n = int (input ("entrez un nombre"))
+    print(somme_jusqua_n(n))
+    
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
     choix = input("Entrez le numéro de l'exercice à exécuter : ") 
@@ -303,7 +312,8 @@ def main():
         exercice30()
     elif choix == "31":
         exercice31()    
-                 
+    elif choix == "32":
+        exercice32()         
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
