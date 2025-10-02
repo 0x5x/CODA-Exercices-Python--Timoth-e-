@@ -221,7 +221,13 @@ def attribuer_mention_selon_note(note):
 def exercice29():
     note = float (input ("entez un nombre"))
     print(attribuer_mention_selon_note(note))
-            
+    
+def compter_1_jusqua_n(n):
+    for i in range (1,n+1):
+        print(i)
+def exercice30():
+    n = int (input ("entrez un nombre"))
+    compter_1_jusqua_n(n)                 
           
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -285,7 +291,10 @@ def main():
     elif choix == "28":
         exercice28()   
     elif choix == "29":
-        exercice29()     
+        exercice29()
+    elif choix == "30":
+        exercice30()
+                 
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
