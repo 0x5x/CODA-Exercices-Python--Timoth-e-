@@ -29,7 +29,6 @@ def exercice5():
     b = int (input("Entrez un deuxième nombre : "))
     print(addition(a, b))
     
-    
 def soustraction(a, b):
         return a - b    
 def exercice6():
@@ -97,7 +96,39 @@ def exercice15():
     cote = float (input ("entrez la longueur d'un coter du carré"))
     print("le périmètre du carré est de " + str(perimetre_carre(cote)))
     print("l'aire du carré est de " + str(aire_carre(cote)))
-               
+    
+def convertir_euros_en_dollars(euros):
+    taux_de_change = 1.1
+    return euros * taux_de_change
+def exercice17():
+    euros = float (input ("Entrez un montantn en euros"))
+    print("le montant en dollars est de " + str(convertir_euros_en_dollars(euros)))
+    
+def convertir_minutes_en_heures(minutes):
+    heure = minutes // 60 
+    minute = minutes % 60
+    return heure, minute
+def exercice18():
+    minutes = int (input ("entez un nombre de minutes"))
+    heure , minute = convertir_minutes_en_heures(minutes)
+    print(f"{minutes} minutes = {heure} heures et {minutes} minutes")
+
+def calculer_ttc(prix_ht, taux_tva):
+    return prix_ht * (1 + taux_tva / 100)
+def exercice19():
+    prix_ht = float (input ("entrez un prix hors taxe"))
+    taux_tva = float (input ("entez le taux de tva en pourcentage"))
+    print("le prix ttc est de " + str(calculer_ttc(prix_ht, taux_tva)))
+
+def demander_nom_et_age():
+    nom = (input ("Entez votre nom"))
+    age = int (input ("entrez votre âge"))
+    return (nom, age)
+    print("tu t'appelles  " + demander_nom_et_age()) ("et tu as" + age + "ans")
+def exercice20():
+       nom, age = demander_nom_et_age()
+       print("tu t'appelles " + nom + " et tu as " + str(age) + " ans")     
+    
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
     choix = input("Entrez le numéro de l'exercice à exécuter : ") 
@@ -133,6 +164,15 @@ def main():
         exercice14()
     elif choix == "15":
         exercice15()
+    elif choix == "17":
+        exercice17()
+    elif choix =="18":
+        exercice18()
+    elif choix =="19":
+        exercice19()    
+    elif choix =="20":
+        exercice20()
+            
                      
     else: 
         print("Exercice non reconnu.") 
