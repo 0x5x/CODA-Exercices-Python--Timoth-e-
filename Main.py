@@ -128,6 +128,55 @@ def demander_nom_et_age():
 def exercice20():
        nom, age = demander_nom_et_age()
        print("tu t'appelles " + nom + " et tu as " + str(age) + " ans")     
+       
+def nombre_positif_ou_negatif(n):
+    if n > 0:
+        return "positif"
+    elif n < 0:
+        return "négatif"
+    else :
+        return "zéro"
+def exercice21():
+    n = int (input ("entrez un nombre"))
+    print(nombre_positif_ou_negatif(n))
+    
+def majeur_ou_mineur(age):
+    if age >= 18:
+        return "majeur"
+    elif age < 18:
+        return "mineur"
+def exercice22():
+    age = int (input ("entrez votre âge"))
+    print(majeur_ou_mineur(age))
+    
+def note_validee(note):
+    if note >= 12:
+       return "validée"
+    elif note < 12:
+       return "non validée"
+def exercice23():
+    note = float(input("entrez votre note"))
+    print(note_validee(note))
+    
+def comparer_nombres(a,b):
+    if a > b:
+        return f"{a} est plus grand que {b}"
+    elif a < b: 
+        return f"{a} est plus petit que {b}"
+def exercice24():
+    a = int (input ("entrez un nombre"))
+    b = int (input ("entrez un autre nombre")) 
+    print(comparer_nombres(a,b))
+    
+def nombre_croissant (a,b):
+    if a < b :
+        return True
+    elif a > b :
+        return False 
+def exercice25():
+    a = int (input ("entrez un nombre"))
+    b = int (input ("entrez un autre nombre"))
+    print(nombre_croissant(a,b))
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -172,8 +221,16 @@ def main():
         exercice19()    
     elif choix =="20":
         exercice20()
-            
-                     
+    elif choix =="21":
+        exercice21()
+    elif choix =="22":
+        exercice22()        
+    elif choix =="23":
+        exercice23()
+    elif choix =="24":
+        exercice24()    
+    elif choix =="25":
+        exercice25()    
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
