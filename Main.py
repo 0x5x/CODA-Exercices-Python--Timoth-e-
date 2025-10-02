@@ -191,13 +191,24 @@ def classer_selon_age(age):
     if age <12:
         return "enfant"
     elif 12 <= age < 18:
-        return "aolescent"
+        return "adolescent"
     elif age >= 18:
         return "adulte"
 def exercice27():
     age = int(input ("entrez votre âge "))
-    print(classer_selon_age(age))       
-    
+    print(classer_selon_age(age)) 
+
+def température_solide_liquide_gazeux(eau):
+    if eau <= 0:
+        return "glace"
+    elif 0 < eau < 100:
+        return "liquide"
+    elif eau >= 100:
+        return "vapeur"
+def exercice28():
+    eau = float (input ("entrez la temperature de l'eau en degre celsius pas farenheit hein"))
+    print(température_solide_liquide_gazeux(eau))
+          
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
     choix = input("Entrez le numéro de l'exercice à exécuter : ") 
@@ -254,7 +265,9 @@ def main():
     elif choix =="26":
         exercice26()
     elif choix =="27":
-        exercice27()          
+        exercice27()  
+    elif choix == "28":
+        exercice28()        
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
