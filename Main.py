@@ -270,13 +270,18 @@ def exercice35():
     
 def repeter_mot_n_fois(mot,n):
     for i in range (n):
-        print (mot)
-            
+        print (mot)           
 def exercice36():
     mot = str (input ("entrez un mot"))
     n = int (input ("entrez un nombre"))
     print(repeter_mot_n_fois(mot,n))
-            
+    
+def pyramide_étoiles(n):
+    for i in range (1,n+1):
+        print('*' * i)
+def exercice37():
+    n = int (input ("entrez un nombre"))
+    print(pyramide_étoiles(n))            
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -355,6 +360,8 @@ def main():
         exercice35() 
     elif choix == "36":
         exercice36()        
+    elif choix == "37":
+        exercice37()
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
