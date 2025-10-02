@@ -208,6 +208,20 @@ def température_solide_liquide_gazeux(eau):
 def exercice28():
     eau = float (input ("entrez la temperature de l'eau en degre celsius pas farenheit hein"))
     print(température_solide_liquide_gazeux(eau))
+    
+def attribuer_mention_selon_note(note):
+    if note < 10:
+        return "Recalé"
+    elif note >= 11 and note < 14:
+        return "Passable"
+    elif note >= 14:
+        return "Bien"
+    elif note >= 17: 
+        return "Très bien"
+def exercice29():
+    note = float (input ("entez un nombre"))
+    print(attribuer_mention_selon_note(note))
+            
           
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -267,7 +281,11 @@ def main():
     elif choix =="27":
         exercice27()  
     elif choix == "28":
-        exercice28()        
+        exercice28()   
+    elif choix == "28":
+        exercice28()   
+    elif choix == "29":
+        exercice29()     
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
