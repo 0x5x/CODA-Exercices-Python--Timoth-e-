@@ -267,7 +267,16 @@ def carré_parfait_n(n):
 def exercice35():
     n = int (input ("entrez un nombre"))
     print(carré_parfait_n(n))
-        
+    
+def repeter_mot_n_fois(mot,n):
+    for i in range (n):
+        print (mot)
+            
+def exercice36():
+    mot = str (input ("entrez un mot"))
+    n = int (input ("entrez un nombre"))
+    print(repeter_mot_n_fois(mot,n))
+            
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -343,7 +352,9 @@ def main():
     elif choix == "34":
         exercice34()   
     elif choix == "35":
-        exercice35()     
+        exercice35() 
+    elif choix == "36":
+        exercice36()        
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
