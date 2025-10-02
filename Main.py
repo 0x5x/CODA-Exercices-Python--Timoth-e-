@@ -1,4 +1,8 @@
-   
+a = 2
+b = 3
+c = 4
+d = 5
+
 def  exercice1(): 
     print("Exercice 1 : Bonjour le monde !") 
     print("Hello World !") 
@@ -26,6 +30,14 @@ def exercice6():
     a = 2
     b = 3
     print(a+b)
+    
+def exercice7():
+    a = 2
+    b = 3
+    print(a-b)
+    
+def exercice8():
+    print(a*b)
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
