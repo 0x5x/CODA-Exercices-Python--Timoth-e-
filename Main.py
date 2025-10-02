@@ -1,12 +1,11 @@
 
 
-def  exercice0(): 
+def exercice0(): 
     print("Exercice 1 : Bonjour le monde !") 
     print("Hello World !") 
     
 def excercice1():
     print ("Hello world !")
-
 
 def exercice2():
     prenom = str (input("quel est ton prénom ? "))
@@ -254,7 +253,13 @@ def table_de_multiplication_de_1_a_10():
 def exercice33():
     i = int (input ("entrez un nombre")) 
     print(table_de_multiplication_de_1_a_10)
-    
+
+def nombre_pair_0_à_n(n):
+    for i in range (0,n+1,2):
+        print(i)
+def exercice34():
+    n = int (input ("entrez un nombre"))
+    print(nombre_pair_0_à_n(n))             
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -327,6 +332,8 @@ def main():
         exercice32()  
     elif choix == "33":
         exercice33()
+    elif choix == "34":
+        exercice34()    
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
