@@ -178,6 +178,26 @@ def exercice25():
     b = int (input ("entrez un autre nombre"))
     print(nombre_croissant(a,b))
     
+def savoir_si_divisible_par_5(n):
+    if n % 5 == 0:
+        return True
+    elif n % 5 != 0: 
+        return False
+def exercice26():
+    n = int (input (" entrez un nombre"))
+    print(savoir_si_divisible_par_5(n))
+    
+def classer_selon_age(age):
+    if age <12:
+        return "enfant"
+    elif 12 <= age < 18:
+        return "aolescent"
+    elif age >= 18:
+        return "adulte"
+def exercice27():
+    age = int(input ("entrez votre âge "))
+    print(classer_selon_age(age))       
+    
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
     choix = input("Entrez le numéro de l'exercice à exécuter : ") 
@@ -230,7 +250,11 @@ def main():
     elif choix =="24":
         exercice24()    
     elif choix =="25":
-        exercice25()    
+        exercice25()  
+    elif choix =="26":
+        exercice26()
+    elif choix =="27":
+        exercice27()          
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
