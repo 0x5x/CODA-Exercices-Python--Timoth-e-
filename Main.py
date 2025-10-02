@@ -244,6 +244,17 @@ def somme_jusqua_n(n):
 def exercice32():
     n = int (input ("entrez un nombre"))
     print(somme_jusqua_n(n))
+
+def table_de_multiplication_de_1_a_10():
+    for i in range (1,11):
+        print(f"Table de multiplication de {i}")
+        for j in range (1,11):
+            print(f"{i} x {j} = {i*j}")
+            
+def exercice33():
+    i = int (input ("entrez un nombre")) 
+    print(table_de_multiplication_de_1_a_10)
+    
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -313,7 +324,9 @@ def main():
     elif choix == "31":
         exercice31()    
     elif choix == "32":
-        exercice32()         
+        exercice32()  
+    elif choix == "33":
+        exercice33()
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
