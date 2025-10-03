@@ -296,6 +296,16 @@ def calculatrice_simple():
      
 def exercice38():
     print(calculatrice_simple())
+ 
+def deviner_pair_ou_impair():
+    nombre = int (input ("entrez un nombre"))
+    if nombre % 2 == 0:
+        return "pair"
+    else :
+        return "impair"
+def exercice39():
+    print(deviner_pair_ou_impair())
+          
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -378,6 +388,8 @@ def main():
         exercice37()
     elif choix == "38":
         exercice38()
+    elif choix == "39":
+        exercice39()
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
