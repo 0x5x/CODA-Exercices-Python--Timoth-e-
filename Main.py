@@ -326,8 +326,6 @@ def moyenne_de_5_nombres():
     return somme /5    
 def exercice41():
     print(moyenne_de_5_nombres())
-       
- 
 def min_max_5_nombre():
     nombre = float(input("Entre un nombre : "))
     minimum = nombre
@@ -342,11 +340,9 @@ def min_max_5_nombre():
     
     print("Min =", minimum, ", Max =", maximum)
 
-
 def exercice42():
     min_max_5_nombre()
     
-          
 def exercice43():
     compteur = 0 
     mot = input("donnez nous un mot :")
@@ -361,9 +357,20 @@ def inverser_les_mots():
     mot = input("Entrez un mot")
     mot_inverse = mot[::-1]
     print("mot inversé",mot_inverse)
-
 def exercice44():
     print (inverser_les_mots())
+    
+    
+def somme_liste(liste):
+    total = 0
+    for n in liste :
+        total += n
+    return total
+print(somme_liste([4,10,48,78,90]))
+    
+def exercice45():
+    print(somme_liste())
+
     
         
 def main(): 
@@ -458,7 +465,9 @@ def main():
     elif choix == "43":
         exercice43() 
     elif choix == "44":
-        exercice44()    
+        exercice44()
+    elif choix == "45":
+        exercice45() 
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
