@@ -293,7 +293,7 @@ def calculatrice_simple():
         return multiplication (a,b)
     elif operateur =="/":
         return division (a,b)
-     
+          
 def exercice38():
     print(calculatrice_simple())
  
@@ -326,7 +326,28 @@ def moyenne_de_5_nombres():
     return somme /5    
 def exercice41():
     print(moyenne_de_5_nombres())
+       
+ 
+def min_max_5_nombre():
+    nombre = float(input("Entre un nombre : "))
+    minimum = nombre
+    maximum = nombre
     
+    for i in range(4):
+        nombre = float(input("Entrez un nombre : "))
+        if nombre < minimum:
+            minimum = nombre
+        if nombre > maximum:
+            maximum = nombre
+    
+    print("Min =", minimum, ", Max =", maximum)
+
+
+def exercice42():
+    min_max_5_nombre()
+          
+
+ 
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -415,6 +436,8 @@ def main():
         exercice40()
     elif choix == "41":
         exercice41()    
+    elif choix == "42":
+        exercice42()    
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
