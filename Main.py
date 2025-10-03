@@ -318,6 +318,15 @@ def exercice40():
      else :
          print("mot de passe invalide , il doit contenir au moin 6 caractères")
          
+def moyenne_de_5_nombres():
+    somme = 0 
+    for i in range (5):
+        nombre = float (input (" entrez un nombre"))
+        somme += nombre
+    return somme /5    
+def exercice41():
+    print(moyenne_de_5_nombres())
+    
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -404,6 +413,8 @@ def main():
         exercice39()
     elif choix == "40":
         exercice40()
+    elif choix == "41":
+        exercice41()    
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
