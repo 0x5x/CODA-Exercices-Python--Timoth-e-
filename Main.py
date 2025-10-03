@@ -305,7 +305,19 @@ def deviner_pair_ou_impair():
         return "impair"
 def exercice39():
     print(deviner_pair_ou_impair())
-          
+    
+def verifier_mot_de_passe_6caracteres(mot_de_passe):
+     if len(mot_de_passe) >= 6:
+          return True
+     else:
+          return False
+def exercice40():
+     mot_de_passe = input ("entrez un mot de passe")
+     if verifier_mot_de_passe_6caracteres(mot_de_passe):
+         print("mot de passe valide")
+     else :
+         print("mot de passe invalide , il doit contenir au moin 6 caractères")
+         
     
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
@@ -390,6 +402,8 @@ def main():
         exercice38()
     elif choix == "39":
         exercice39()
+    elif choix == "40":
+        exercice40()
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
