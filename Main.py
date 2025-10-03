@@ -345,10 +345,27 @@ def min_max_5_nombre():
 
 def exercice42():
     min_max_5_nombre()
-          
-
- 
     
+          
+def exercice43():
+    compteur = 0 
+    mot = input("donnez nous un mot :")
+    voyelle = ["a","e","i","o","u","y"]
+    for letter in mot :
+        for i in voyelle :
+          if letter == i :
+              compteur += 1
+    print(compteur)      
+    
+def inverser_les_mots():
+    mot = input("Entrez un mot")
+    mot_inverse = mot[::-1]
+    print("mot inversé",mot_inverse)
+
+def exercice44():
+    print (inverser_les_mots())
+    
+        
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
     choix = input("Entrez le numéro de l'exercice à exécuter : ") 
@@ -437,7 +454,11 @@ def main():
     elif choix == "41":
         exercice41()    
     elif choix == "42":
-        exercice42()    
+        exercice42()  
+    elif choix == "43":
+        exercice43() 
+    elif choix == "44":
+        exercice44()    
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
