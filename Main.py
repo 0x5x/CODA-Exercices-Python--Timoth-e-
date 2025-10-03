@@ -1,5 +1,3 @@
-
-
 def exercice0(): 
     print("Exercice 1 : Bonjour le monde !") 
     print("Hello World !") 
@@ -283,6 +281,22 @@ def exercice37():
     n = int (input ("entrez un nombre"))
     print(pyramide_étoiles(n))            
     
+def calculatrice_simple():
+    a = float (input ("entrez un nombre"))
+    b = float (input ("entrez un autre nombre"))
+    operateur = input ("entrez un opérateur (+,-,*,/)")
+    if operateur == "+":
+        return addition (a,b)
+    elif operateur == "-":
+        return soustraction (a,b)
+    elif operateur == "*":
+        return multiplication (a,b)
+    elif operateur =="/":
+        return division (a,b)
+     
+def exercice38():
+    print(calculatrice_simple())
+    
 def main(): 
     # Demande à l'utilisateur quel exercice exécuter 
     choix = input("Entrez le numéro de l'exercice à exécuter : ") 
@@ -362,6 +376,8 @@ def main():
         exercice36()        
     elif choix == "37":
         exercice37()
+    elif choix == "38":
+        exercice38()
     else: 
         print("Exercice non reconnu.") 
 if __name__ == "__main__": 
